@@ -39,7 +39,8 @@ class PaymentWithBitPayCaptureAction extends PaymentAwareAction
         $settings->setApiKey($api->getApiKey());
         $settings->setCurrency($model['CurrencyCode']);
         $settings->setId($model['MerchantTransactionId']);
-        $settings->concatenateItems($model['Items']);
+        $settings->addItems($model['Items']);
+        $settings->setItemDesc($model['PaymentDescription']);
         $settings->setRedirectUrl($request->getModel()->activeRecord->_after_url);
 
         try {
