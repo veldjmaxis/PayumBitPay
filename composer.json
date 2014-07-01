@@ -1,10 +1,10 @@
 {
-    "name": "r3s7/PayumDineroMail",
+    "name": "r3s7/PayumBitPay",
     "type": "payum-extension",
-    "description": "DineroMail integration into Payum",
+    "description": "BitPay integration into Payum",
     "keywords": [
         "payment",
-        "dineromail",
+        "bitpay",
         "payum"
     ],
     "license": "MIT",
