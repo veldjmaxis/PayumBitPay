@@ -35,6 +35,11 @@ class Settings
 
     }
 
+    public function setItemDesc($string)
+    {
+        $this->_itemDesc = $string;
+    }
+
     public function setNotificationUrl($url)
     {
         $this->_notificationUrl = $url;
@@ -47,20 +52,12 @@ class Settings
 
     }
 
-    public function concatenateItems(Array $items)
+    public function addItems(Array $items)
     {
 
-        $count = 0;
         foreach ($items as $item) {
 
             $this->_amount += $item['Amount'];
-            if($count == 0){
-                $this->_itemDesc .= $item['Name'];
-            }else{
-                $this->_itemDesc .= ', ' . $item['Name'];
-            }
-
-            $count++;
         }
 
     }
