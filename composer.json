@@ -1,5 +1,5 @@
 {
-    "name": "r3s7/PayumBitPay",
+    "name": "veldjmaxis/PayumBitPay",
     "type": "payum-extension",
     "description": "BitPay integration into Payum",
     "keywords": [
@@ -36,6 +36,6 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "payum/payum": "0.7.*@dev"
+        "payum/payum": "2.3.*"
     }
 }
